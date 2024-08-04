@@ -1,10 +1,12 @@
 package turma;
 
+import curso.Curso;
+
 import java.time.LocalDate;
 
 public class Turma {
 
-    private String cursoTurma;
+    private Curso curso;
 
     private int codigoTurma;
 
@@ -18,12 +20,12 @@ public class Turma {
         this.capacidadeMaxima = capacidadeMaxima;
     }
 
-    public void setCursoTurma(String cursoTurma) {
-        this.cursoTurma = cursoTurma;
+    public void setCurso(Curso curso) {
+        this.curso = curso;
     }
 
-    public String getCursoTurma() {
-        return cursoTurma;
+    public Curso getCurso() {
+        return curso;
 
     }
 
