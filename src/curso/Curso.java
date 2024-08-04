@@ -14,8 +14,8 @@ public class Curso {
         return duracaoCurso;
     }
 
-    public void setDuracaoCurso(int duracaoCuros) {
-        this.duracaoCurso = duracaoCuros;
+    public void setDuracaoCurso(int duracaoCursos) {
+        this.duracaoCurso = duracaoCursos;
     }
 
     public int getCodigoIdentificador() {
