@@ -5,12 +5,10 @@ import java.time.LocalDate;
 public class Aluno {
 
     private String nomeAluno;
-
     private LocalDate dataNascAluno;
-
     private long matriculaAluno;
-
     private int idadeAluno;
+
 
     public int getIdadeAluno() {
         return idadeAluno;

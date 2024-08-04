@@ -3,7 +3,6 @@ package main;
 import java.io.File;
 import java.util.Scanner;
 import java.util.List;
-
 import aluno.GerenciarAluno;
 import aluno.Aluno;
 
@@ -11,22 +10,20 @@ import aluno.Aluno;
 public class ProgramaPrincipal {
 
     private Scanner lerTeclado;
-
-
-    private final static int CADASTRARESTUDANTE = 1;
-    private final static int EDITARESTUDANTE = 2;
-    private final static int LISTARESTUDANTTES = 3;
-    private final static int REMOVERESTUDANTE = 4;
-    private final static int CADASTRARTURMA = 5;
-    private final static int EDITARTURMA = 6;
-    private final static int LISTARTURMA = 7;
-    private final static int REMOVERTURMA = 8;
+    private final static int CADASTRAR_ESTUDANTE = 1;
+    private final static int EDITAR_ESTUDANTE = 2;
+    private final static int LISTAR_ESTUDANTTES = 3;
+    private final static int REMOVER_ESTUDANTE = 4;
+    private final static int CADASTRAR_TURMA = 5;
+    private final static int EDITAR_TURMA = 6;
+    private final static int LISTAR_TURMA = 7;
+    private final static int REMOVER_TURMA = 8;
     private final static int SAIR = 9;
-    private GerenciarAluno gerAluno;
+    private GerenciarAluno gerenciarAluno;
 
     public ProgramaPrincipal() {
         lerTeclado = new Scanner(System.in);
-        gerAluno = new GerenciarAluno();
+        gerenciarAluno = new GerenciarAluno();
 
 
     }
@@ -46,28 +43,28 @@ public class ProgramaPrincipal {
 
             opcao = lerTeclado.nextInt();
 
-            if (opcao == CADASTRARESTUDANTE) {
+            if (opcao == CADASTRAR_ESTUDANTE) {
                 System.out.println("Cadastrar usuário");
                 cadastrar();
-            } else if (opcao == EDITARESTUDANTE) {
+            } else if (opcao == EDITAR_ESTUDANTE) {
                 System.out.println("Editar Estudante");
                 editarEstudante();
-            } else if (opcao == LISTARESTUDANTTES) {
+            } else if (opcao == LISTAR_ESTUDANTTES) {
                 System.out.println("Listar usuários");
                 listarEstudantes();
-            } else if (opcao == REMOVERESTUDANTE) {
+            } else if (opcao == REMOVER_ESTUDANTE) {
                 System.out.println("Remover usuário");
                 removerEstudante();
-            } else if (opcao == CADASTRARTURMA) {
+            } else if (opcao == CADASTRAR_TURMA) {
                 System.out.println("Cadastrar turma");
                 cadastrarTurma();
-            } else if (opcao == REMOVERTURMA) {
+            } else if (opcao == REMOVER_TURMA) {
                 System.out.println("Remover turma");
                 removerTurma();
-            } else if (opcao == EDITARTURMA) {
+            } else if (opcao == EDITAR_TURMA) {
                 System.out.println("Editar turma");
                 editarTurma();
-            } else if (opcao == LISTARTURMA) {
+            } else if (opcao == LISTAR_TURMA) {
                 System.out.println("Listar turma");
                 listarTurma();
             }

@@ -1,24 +1,21 @@
 package curso;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public class Curso {
 
-
     private int quantidadeTurmas;
     private int codigoIndetificador;
-
-
     private String nomeCurso;
-    private LocalDate duracaoCuros;
+    private Date duracaoCursos;
 
-    public LocalDate getDuracaoCuros() {
-        return duracaoCuros;
+
+    public Date getDuracaoCuros() {
+        return duracaoCursos;
     }
 
-    public void setDuracaoCuros(LocalDate duracaoCuros) {
-        this.duracaoCuros = duracaoCuros;
+    public void setDuracaoCuros(Date duracaoCuros) {
+        this.duracaoCursos = duracaoCuros;
     }
 
     public int getCodigoIdentificador() {

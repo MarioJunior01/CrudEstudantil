@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class ImpotadorArquivo {
 
-    public static File nomeDiretorio = new File("src/arquivo");
+    public static File nomeDiretorio = new File("src/arquivo/");
 
     public void criarArquivo(File nomeDiretorio) {
         if (nomeDiretorio.mkdir()) {
