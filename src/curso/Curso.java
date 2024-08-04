@@ -10,11 +10,11 @@ public class Curso {
     private int  duracaoCurso;
 
 
-    public int  getDuracaoCuros() {
+    public int  getDuracaoCurso() {
         return duracaoCurso;
     }
 
-    public void setDuracaoCuros(int duracaoCuros) {
+    public void setDuracaoCurso(int duracaoCuros) {
         this.duracaoCurso = duracaoCuros;
     }
 
