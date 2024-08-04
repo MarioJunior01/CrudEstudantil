@@ -27,11 +27,11 @@ public class Aluno {
         this.nomeAluno = nomeAluno;
     }
 
-    public Date getDataNascAluno() {
+    public Date getDataNascimentoAluno() {
         return dataNascimentoAluno;
     }
 
-    public void setDataNascAluno(Date dataNascimentoAluno) {
+    public void setDataNascimentoAluno(Date dataNascimentoAluno) {
         this.dataNascimentoAluno = dataNascimentoAluno;
     }
 
