@@ -11,11 +11,11 @@ public class Curso {
 
 
     public Date getDuracaoCuros() {
-        return duracaoCursos;
+        return duracaoCurso;
     }
 
     public void setDuracaoCuros(Date duracaoCuros) {
-        this.duracaoCursos = duracaoCuros;
+        this.duracaoCurso = duracaoCuros;
     }
 
     public int getCodigoIdentificador() {
