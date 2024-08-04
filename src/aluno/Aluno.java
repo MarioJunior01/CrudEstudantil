@@ -1,11 +1,12 @@
 package aluno;
 
-import java.time.LocalDate;
+
+import java.util.Date;
 
 public class Aluno {
 
     private String nomeAluno;
-    private LocalDate dataNascAluno;
+    private Date dataNascimentoAluno;
     private long matriculaAluno;
     private int idadeAluno;
 
@@ -26,12 +27,12 @@ public class Aluno {
         this.nomeAluno = nomeAluno;
     }
 
-    public LocalDate getDataNascAluno() {
-        return dataNascAluno;
+    public Date getDataNascAluno() {
+        return dataNascimentoAluno;
     }
 
-    public void setDataNascAluno(LocalDate dataNascAluno) {
-        this.dataNascAluno = dataNascAluno;
+    public void setDataNascAluno(Date dataNascimentoAluno) {
+        this.dataNascimentoAluno = dataNascimentoAluno;
     }
 
     public long getMatriculaAluno() {
