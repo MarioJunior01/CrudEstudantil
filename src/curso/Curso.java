@@ -7,14 +7,14 @@ public class Curso {
     private int quantidadeTurmas;
     private int codigoIndetificador;
     private String nomeCurso;
-    private Date duracaoCurso;
+    private int  duracaoCurso;
 
 
-    public Date getDuracaoCuros() {
+    public int  getDuracaoCuros() {
         return duracaoCurso;
     }
 
-    public void setDuracaoCuros(Date duracaoCuros) {
+    public void setDuracaoCuros(int duracaoCuros) {
         this.duracaoCurso = duracaoCuros;
     }
 
