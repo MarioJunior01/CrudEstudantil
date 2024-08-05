@@ -5,24 +5,28 @@ import java.io.IOException;
 
 public class ImpotadorArquivo {
 
-    public static File nomeDiretorio = new File("src/arquivo/");
 
-    public void criarArquivo(File nomeDiretorio) {
-        if (nomeDiretorio.mkdir()) {
-            System.out.println("Diretório criado");
-        } else {
-            System.out.println("Diretório não criado");
-        }
+    public void criarArquivo(String nomeArquivo) {
+        File arquivo = new File(nomeArquivo);
+
         try {
-            File file = new File(nomeDiretorio, "Alunos.csv");
-            if (file.createNewFile()) {
-                System.out.println("Arquivo criado");
-            } else {
-                System.out.println("Arquivo não criado");
-            }
-        } catch (
-                IOException ex) {
+            arquivo.createNewFile();
+        } catch (IOException ex) {
+            System.out.printf("Houve um problema ao criar o arquivo:%n%s%n", ex.getMessage());
             ex.printStackTrace();
+
         }
+
+    }
+
+    public void salvarInformacoes() {
+
+    }
+
+    public void lerInformacoes() {
+
+    }
+    public  void removerInformacoes(){
+        
     }
 }
