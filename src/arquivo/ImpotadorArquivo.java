@@ -27,12 +27,7 @@ public class ImpotadorArquivo {
     public void salvarInformacoes(){
 
     }
-    public void removerInformacoes(){
-
-    }
-    public void buscarInformacoes(){
-
-    }
+  
 
 
 }
