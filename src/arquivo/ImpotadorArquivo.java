@@ -6,12 +6,17 @@ import java.io.IOException;
 public class ImpotadorArquivo {
 
 
-    public void criarArquivo(String nomeArquivo) {
-        File arquivo = new File(nomeArquivo);
+    private static File caminhoDiretorio = new File("src/arquivo/");
+
+
+    public void criarArquivo(File caminhoDiretorio) {
+
 
         try {
+            File arquivo = new File(caminhoDiretorio,"aluno.csv");
             arquivo.createNewFile();
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
             System.out.printf("Houve um problema ao criar o arquivo:%n%s%n", ex.getMessage());
             ex.printStackTrace();
 
@@ -19,14 +24,15 @@ public class ImpotadorArquivo {
 
     }
 
-    public void salvarInformacoes() {
+    public void salvarInformacoes(){
+
+    }
+    public void removerInformacoes(){
+
+    }
+    public void buscarInformacoes(){
 
     }
 
-    public void lerInformacoes() {
 
-    }
-    public  void removerInformacoes(){
-        
-    }
 }
